@@ -1,4 +1,5 @@
-import s from './userProfile.module.css';
+import React from 'react';
+import s from './userProfile.module.scss';
 import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -34,5 +35,5 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 };

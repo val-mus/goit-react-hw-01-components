@@ -1,9 +1,12 @@
+import { Container } from './Container/Container';
 import { Profile } from './userProfile/userProfile';
+import { Statistics } from './Statistics/statistics';
 import user from '../Data/user.json';
+import data from '../Data/data.json';
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -11,6 +14,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-    </div>
+      <Statistics title="upload stats" stats={data}></Statistics>
+    </Container>
   );
 };
