@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './userProfile.module.scss';
+import s from './Profile.module.scss';
 import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
